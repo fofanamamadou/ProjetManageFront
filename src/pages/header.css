@@ -1,0 +1,101 @@
+/* Header Principal */
+.navbar {
+  position: fixed; /* Fixe le header en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; /* Plus grand que celui du sidebar */
+  background-color: #ffffff; /* Fond clair */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px; /* Ajuster selon besoin */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour le détacher */
+}
+
+/* Ajustement du conteneur du Header */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Ajuster la hauteur du body pour ne pas cacher le contenu */
+body {
+  padding-top: 60px; /* Même hauteur que le header */
+}
+  
+  /* Logo */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Menu de Navigation */
+  .navbar-menu {
+    flex: 1; /* Permet au menu de s'étendre */
+    display: flex;
+    justify-content: center; /* Centre les éléments */
+  }
+  
+  .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin: 0;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #007bff;
+  }
+  
+  /* Utilisateur */
+  .navbar-user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .navbar-user-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .avatar {
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+  }
+  
