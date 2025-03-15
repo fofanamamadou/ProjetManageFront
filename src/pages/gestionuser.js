@@ -208,7 +208,7 @@ export default function Gestionuser() {
             title: 'Rôles',
             dataIndex: 'roles',
             key: 'roles',
-            render: (_, record) => record.roles.map(role => role.nom_role).join(", ")
+            render: (_, record) => record.roles.map(role => role.nom).join(", ")
         },
         {
             title: 'Date d\'ajout',
@@ -377,7 +377,7 @@ export default function Gestionuser() {
                 >
                     {roles.map(role => (
                         <Select.Option key={role.id} value={role.id}>
-                            {role.nom_role}
+                            {role.nom}
                         </Select.Option>
                     ))}
                 </Select>
